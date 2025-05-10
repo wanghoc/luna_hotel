@@ -1,0 +1,936 @@
+/* Services Page Styles */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Afacad', 'Inter', 'Segoe UI', sans-serif;
+    background: #FFFAF6;
+    color: #000;
+    overflow-x: hidden;
+}
+
+/* Order Button */
+.order-button {
+    width: 184px;
+    height: 87px;
+    left: 1721px;
+    top: 16px;
+    position: absolute;
+    background: white;
+    border-bottom-left-radius: 30px;
+    z-index: 10;
+}
+
+.order-button-bg {
+    width: 58.02px;
+    height: 30px;
+    position: absolute;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+    background: white;
+}
+
+.order-button-inner {
+    width: 163px;
+    height: 60px;
+    left: 13px;
+    top: 18px;
+    position: absolute;
+    background: black;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.circle-white {
+    width: 43px;
+    height: 43px;
+    left: 107px;
+    top: 8px;
+    position: absolute;
+    background: white;
+    border-radius: 9999px;
+}
+
+.order-text {
+    width: 78px;
+    height: 24px;
+    left: 26px;
+    top: 18px;
+    position: absolute;
+    color: white;
+    font-size: 16px;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 24px;
+}
+
+.arrow-icon {
+    width: 16px;
+    height: 16px;
+    left: 121px;
+    top: 22px;
+    position: absolute;
+    background: black;
+}
+
+/* Hero Section */
+.hero-section {
+    width: 1889px;
+    height: 1021px;
+    left: 15px;
+    top: 16px;
+    position: absolute;
+}
+
+.hero-bg {
+    width: 1889px;
+    height: 1019px;
+    left: 0px;
+    top: 2px;
+    position: absolute;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.hero-overlay {
+    width: 1889px;
+    height: 1021px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: linear-gradient(0deg, black 0%, rgba(0, 0, 0, 0) 100%);
+    border-radius: 16px;
+}
+
+/* Services Title and Description */
+.services-title {
+    width: 876px;
+    height: 200px;
+    left: 117px;
+    top: 606px;
+    position: absolute;
+    color: white;
+    font-size: 92px;
+    font-weight: 400;
+    line-height: 121px;
+    z-index: 2;
+}
+
+.services-description {
+    width: 794px;
+    height: 200px;
+    left: 125px;
+    top: 665px;
+    position: absolute;
+    color: white;
+    font-size: 24px;
+    font-family: 'Segoe UI';
+    font-weight: 350;
+    line-height: 52px;
+    z-index: 2;
+    margin-top: 80px;
+}
+
+.contact-btn {
+    width: 211px;
+    height: 83px;
+    padding: 8px 18px;
+    left: 117px;
+    top: 840px;
+    position: absolute;
+    background: white;
+    border-radius: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+    cursor: pointer;
+}
+
+.contact-btn span {
+    width: 106px;
+    height: 24px;
+    color: black;
+    font-size: 20px;
+    font-family: Afacad;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+/* Luna Logo */
+.luna-logo {
+    width: 337px;
+    left: 78px;
+    top: 52px;
+    position: absolute;
+    color: white;
+    font-size: 32px;
+    font-family: Anaheim;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: 5.76px;
+    z-index: 2;
+}
+
+/* Navigation */
+.navbar {
+    width: 650px;
+    height: 70px;
+    left: 622px;
+    top: 33px;
+    position: absolute;
+    z-index: 3;
+}
+
+.navbar-bg {
+    width: 650px;
+    height: 70px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: linear-gradient(93deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.04) 100%);
+    border-radius: 32px;
+    border: 2px #797979 solid;
+    backdrop-filter: blur(21px);
+}
+
+.home-nav {
+    width: 177px;
+    height: 53px;
+    left: 9px;
+    top: 8px;
+    position: absolute;
+    border-radius: 40px;
+    backdrop-filter: blur(60px);
+}
+
+.home-text {
+    width: 107px;
+    height: 20px;
+    left: 35px;
+    top: 17px;
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.rooms-nav {
+    width: 163px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    left: 186px;
+    top: 9px;
+    position: absolute;
+    border-radius: 40px;
+    backdrop-filter: blur(60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rooms-text {
+    width: 119px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.services-nav {
+    width: 149px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    left: 349px;
+    top: 9px;
+    position: absolute;
+    background: white;
+    border-radius: 40px;
+    backdrop-filter: blur(60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.services-text {
+    width: 119px;
+    height: 20px;
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+.profile-nav {
+    width: 135px;
+    padding-left: 24px;
+    padding-right: 24px;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    left: 498px;
+    top: 9px;
+    position: absolute;
+    border-radius: 40px;
+    backdrop-filter: blur(60px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-text {
+    width: 119px;
+    height: 20px;
+    text-align: center;
+    color: white;
+    font-size: 18px;
+    font-family: Inter;
+    font-weight: 700;
+    line-height: 27px;
+}
+
+/* Hotel Slogan and Center Logo */
+.hotel-slogan {
+    width: 1301px;
+    left: 315px;
+    top: 1251px;
+    position: absolute;
+    text-align: center;
+    color: black;
+    font-size: 40px;
+    font-family: Afacad;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 52px;
+}
+
+.hotel-logo-center {
+    width: 260px;
+    left: 847px;
+    top: 1204px;
+    position: absolute;
+    color: black;
+    font-size: 32px;
+    font-family: Anaheim;
+    font-weight: 800;
+    line-height: 32px;
+    letter-spacing: 5.76px;
+}
+
+.signature {
+    width: 229px;
+    height: 129px;
+    left: 866px;
+    top: 1479px;
+    position: absolute;
+}
+
+/* Dividers */
+.divider {
+    width: 1757px;
+    height: 0px;
+    left: 83px;
+    position: absolute;
+    outline: 1px #8E8E8E solid;
+    outline-offset: -0.50px;
+}
+
+.divider-1 {
+    top: 2788px;
+}
+
+.divider-2 {
+    top: 4056px;
+}
+
+.divider-3 {
+    top: 5126px;
+}
+
+.divider-4 {
+    top: 6327px;
+}
+
+.divider-5 {
+    top: 7368px;
+}
+
+/* Common Service Section Styles */
+.service-section {
+    position: absolute;
+}
+
+.service-label {
+    color: black;
+    font-size: 32px;
+    font-family: Afacad;
+    font-weight: 400;
+    line-height: 52px;
+}
+
+.service-title {
+    color: black;
+    font-size: 80px;
+    font-family: Afacad;
+    font-weight: 400;
+    line-height: 102px;
+}
+
+.service-description {
+    color: black;
+    font-size: 40px;
+    font-family: 'Segoe UI';
+    font-weight: 350;
+    line-height: 59px;
+}
+
+/* Service 1: Spa */
+.service-spa {
+    left: 80px;
+    top: 1865px;
+}
+
+.service-spa .service-label {
+    width: 751px;
+    height: 71px;
+    left: 0;
+    top: 46px;
+}
+
+.service-spa .service-title {
+    width: 813px;
+    height: 449px;
+    left: 0;
+    top: 0;
+}
+
+.service-spa .service-description {
+    width: 808px;
+    height: 354px;
+    left: 0;
+    top: 272px;
+}
+
+.service-img-large {
+    width: 877px;
+    height: 805px;
+    left: 903px;
+    top: -90px;
+    position: absolute;
+    box-shadow: 4px 4px 62px rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 473px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    object-fit: cover;
+}
+
+.service-img-small {
+    width: 508px;
+    height: 230.71px;
+    left: 993px;
+    top: 570.29px;
+    position: absolute;
+    box-shadow: 7px 4px 73px rgba(0, 0, 0, 0.48);
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/* Service 2: Restaurant */
+.service-restaurant {
+    left: 583px;
+    top: 2876px;
+}
+
+.restaurant-label {
+    width: 751px;
+    height: 71px;
+    text-align: center;
+}
+
+.restaurant-title {
+    width: 657px;
+    height: 449px;
+    left: 62px;
+    top: -81px;
+    text-align: center;
+}
+
+.restaurant-description {
+    width: 808px;
+    height: 354px;
+    left: -27px;
+    top: 107px;
+    text-align: center;
+}
+
+.restaurant-image-section {
+    width: 1922px;
+    height: 665px;
+    left: -2px;
+    top: 3287px;
+    position: absolute;
+    background: white;
+    overflow: hidden;
+}
+
+.restaurant-img {
+    width: 1921px;
+    height: 665px;
+    left: 1px;
+    top: 0px;
+    position: absolute;
+    object-fit: cover;
+}
+
+/* Service 3: Swimming Pool */
+.service-pool {
+    left: 1065px;
+    top: 4256px;
+}
+
+.pool-label {
+    width: 751px;
+    height: 71px;
+    left: 24px;
+    top: 35px;
+    text-align: right;
+}
+
+.pool-title {
+    width: 775px;
+    height: 449px;
+    left: 0;
+    top: 0;
+    text-align: right;
+}
+
+.pool-description {
+    width: 808px;
+    height: 354px;
+    left: -38px;
+    top: 315px;
+    text-align: right;
+}
+
+.pool-img-large {
+    width: 877px;
+    height: 805px;
+    left: -105px;
+    top: 709px;
+    position: absolute;
+    transform: rotate(180deg);
+    transform-origin: top left;
+    box-shadow: 4px 4px 62px rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 473px;
+    border-top-right-radius: 24px;
+    border-bottom-right-radius: 24px;
+    border-bottom-left-radius: 24px;
+    object-fit: cover;
+}
+
+.pool-img-small {
+    width: 458px;
+    height: 208px;
+    left: -105px;
+    top: 795px;
+    position: absolute;
+    transform: rotate(180deg);
+    transform-origin: top left;
+    box-shadow: 7px 3px 73px rgba(0, 0, 0, 0.25);
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+/* Service 4: Tours */
+.service-tours {
+    left: 83px;
+    top: 5432px;
+}
+
+.tours-label {
+    width: 751px;
+    height: 71px;
+    left: 0;
+    top: 81px;
+}
+
+.tours-title {
+    width: 592px;
+    height: 449px;
+    left: 0;
+    top: 0;
+}
+
+.tours-description {
+    width: 809px;
+    height: 354px;
+    left: 0;
+    top: 191px;
+}
+
+.book-now-btn {
+    width: 188px;
+    height: 83px;
+    padding: 8px 18px;
+    left: 0;
+    top: 478px;
+    position: absolute;
+    background: white;
+    border-radius: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.book-now-btn span {
+    width: 84px;
+    height: 24px;
+    color: black;
+    font-size: 20px;
+    font-family: Afacad;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 24px;
+}
+
+.tour-gallery {
+    display: grid;
+    grid-template-columns: repeat(2, 411px);
+    grid-template-rows: repeat(2, 498px);
+    gap: 39px;
+    position: absolute;
+    left: 892px;
+    top: -225px;
+}
+
+.tour-img {
+    border-radius: 16px;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* Service 5: Custom Services */
+.service-custom {
+    left: 1065px;
+    top: 6490px;
+}
+
+.custom-label {
+    width: 751px;
+    height: 71px;
+    left: 24px;
+    top: 35px;
+    text-align: right;
+}
+
+.custom-title {
+    width: 775px;
+    height: 449px;
+    left: 0;
+    top: 0;
+    text-align: right;
+}
+
+.custom-description {
+    width: 797px;
+    height: 354px;
+    left: -27px;
+    top: 302px;
+    text-align: right;
+}
+
+.custom-img-main {
+    width: 553px;
+    height: 742px;
+    left: -985px;
+    top: -41px;
+    position: absolute;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.custom-img-sub {
+    width: 557px;
+    height: 695px;
+    left: -658px;
+    top: -124px;
+    position: absolute;
+    border-radius: 16px;
+    object-fit: cover;
+}
+
+.contact-now-btn {
+    width: 211px;
+    height: 83px;
+    padding: 8px 18px;
+    left: 559px;
+    top: 641px;
+    position: absolute;
+    background: white;
+    border-radius: 50px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contact-now-btn span {
+    width: 106px;
+    height: 24px;
+    color: black;
+    font-size: 20px;
+    font-family: Afacad;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 24px;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    position: absolute;
+    left: 0;
+    top: 7455px;
+    width: 100%;
+}
+
+.newsletter-bg {
+    width: 1920px;
+    height: 730px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    object-fit: cover;
+}
+
+.newsletter-title {
+    width: 1213px;
+    height: 200px;
+    left: 627px;
+    top: 195px;
+    position: absolute;
+    text-align: right;
+    color: white;
+    font-size: 64px;
+    font-family: Afacad;
+    font-weight: 400;
+    line-height: 96px;
+}
+
+.map-image {
+    width: 571px;
+    height: 352px;
+    left: 80px;
+    top: 176px;
+    position: absolute;
+    border-radius: 16px;
+    border: 1px white solid;
+    object-fit: cover;
+}
+
+.address-title {
+    width: 205px;
+    left: 263px;
+    top: 543px;
+    position: absolute;
+    color: white;
+    font-size: 20px;
+    font-family: Segoe UI;
+    font-weight: 700;
+    line-height: 28px;
+    text-align: center;
+}
+
+.newsletter-form {
+    width: 582px;
+    height: 71px;
+    left: 1258px;
+    top: 438px;
+    position: absolute;
+    border-radius: 30px;
+}
+
+.newsletter-input-bg {
+    width: 581.54px;
+    height: 71px;
+    left: 0px;
+    top: 0px;
+    position: absolute;
+    background: #F3F4F6;
+    box-shadow: 0px 8px 24px -4px rgba(255, 255, 255, 0.08);
+    border-radius: 32px;
+}
+
+.newsletter-placeholder {
+    width: 551px;
+    height: 27.22px;
+    left: 31px;
+    top: 21.30px;
+    position: absolute;
+    color: #7B7E86;
+    font-size: 16px;
+    font-family: Afacad;
+    font-weight: 400;
+}
+
+.newsletter-button {
+    width: 150px;
+    height: 59px;
+    padding: 8px 18px 8px 13px;
+    left: 423px;
+    top: 6px;
+    position: absolute;
+    background: black;
+    border-radius: 30px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.newsletter-button span {
+    width: 65px;
+    height: 24px;
+    color: white;
+    font-size: 16px;
+    font-family: Afacad;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 24px;
+}
+
+/* Footer */
+.footer-content {
+    left: 200px;
+    top: 8287px;
+    position: absolute;
+}
+
+.footer-slogan {
+    width: 413px;
+    left: 0;
+    top: 0;
+    position: absolute;
+    color: black;
+    font-size: 30px;
+    font-family: Afacad;
+    font-weight: 700;
+    line-height: 42px;
+}
+
+.footer-hotel {
+    left: 0;
+    top: 93.63px;
+    position: absolute;
+    color: black;
+    font-size: 16px;
+    font-family: Inter;
+    font-weight: 400;
+}
+
+.footer-columns {
+    left: 741px;
+    top: -24px;
+    position: absolute;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 90px;
+}
+
+.footer-column {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.column-title {
+    color: rgba(0, 0, 0, 0.80);
+    font-size: 16px;
+    font-family: Afacad;
+    font-weight: 600;
+}
+
+.column-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 18px;
+}
+
+.column-item {
+    text-align: center;
+    color: black;
+    font-size: 18px;
+    font-family: Segoe UI;
+    font-weight: 300;
+    line-height: 28.80px;
+}
+
+.footer-bottom {
+    width: 1920px;
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    left: 0px;
+    top: 8500px;
+    position: absolute;
+    background: #010314;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 32px;
+}
+
+.footer-link {
+    color: white;
+    font-size: 16px;
+    font-family: Afacad;
+    font-weight: 400;
+}
+
+/* Navigation Links */
+.nav-link {
+    text-decoration: none;
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+/* Button Text Fixes */
+.contact-btn,
+.book-now-btn,
+.contact-now-btn {
+    color: black;
+    font-size: 20px;
+    font-family: Afacad;
+    font-weight: 400;
+    text-transform: capitalize;
+    line-height: 24px;
+}

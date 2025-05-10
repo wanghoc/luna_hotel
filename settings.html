@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Luna Hotel - Thông tin cá nhân và lịch sử đặt phòng">
+    <meta name="keywords" content="khách sạn, hồ sơ, lịch sử đặt phòng, Luna">
+    <title>LUNA HOTEL - Hồ sơ</title>
+    <link rel="stylesheet" href="assets/css/globals.css">
+    <link rel="stylesheet" href="assets/css/settings.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Anaheim&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <!-- Luna Hotel Logo -->
+        <a href="index.html" class="nav-link">
+            <div class="luna-logo">LUNA HOTEL</div>
+        </a>
+
+        <!-- Navigation -->
+        <div class="navbar">
+            <div class="navbar-bg"></div>
+            <div class="home-nav">
+                <a href="index.html" class="nav-link">
+                    <div class="home-text">Trang chủ</div>
+                </a>
+            </div>
+            <div class="rooms-nav">
+                <a href="booking.html" class="nav-link">
+                    <div class="rooms-text">Phòng & Giá</div>
+                </a>
+            </div>
+            <div class="services-nav">
+                <a href="services.html" class="nav-link">
+                    <div class="services-text">Dịch vụ</div>
+                </a>
+            </div>
+            <div class="profile-nav active">
+                <a href="settings.html" class="nav-link">
+                    <div class="profile-text">Hồ sơ</div>
+                </a>
+            </div>
+        </div>
+
+        <main class="profile-content">
+            <div class="profile-container">
+                <!-- Thông tin cá nhân section -->
+                <section class="personal-info">
+                    <h2>Thông tin cá nhân</h2>
+
+                    <form id="profile-form">
+                        <div class="form-group">
+                            <label for="fullname">Họ và tên</label>
+                            <input type="text" id="fullname" name="fullname" placeholder="Nhập họ và tên của bạn">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Gmail</label>
+                            <input type="email" id="email" name="email" placeholder="Nhập địa chỉ email của bạn">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="phone">Số điện thoại</label>
+                            <input type="tel" id="phone" name="phone" placeholder="Nhập số điện thoại của bạn">
+                        </div>
+
+                        <div class="form-buttons">
+                            <button type="button" class="btn-outline" id="reset-btn">Đặt lại mẫu</button>
+                            <button type="submit" class="btn-primary" id="save-btn">Lưu thay đổi</button>
+                        </div>
+                    </form>
+                </section>
+
+                <!-- Lịch sử đặt section -->
+                <section class="booking-history">
+                    <h2>Lịch sử đặt</h2>
+
+                    <div class="booking-table">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID phòng</th>
+                                    <th>Loại phòng</th>
+                                    <th>Số khách</th>
+                                    <th>Đơn giá</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="booking-row" data-booking-id="001">
+                                    <td>
+                                        <div class="room-id">
+                                            <img src="assets/images/Rectangle 96.png" alt="Phòng 001"
+                                                class="room-image">
+                                            <span>001</span>
+                                        </div>
+                                    </td>
+                                    <td>Phòng đơn</td>
+                                    <td>4</td>
+                                    <td>1.140.000đ</td>
+                                </tr>
+                                <!-- Có thể thêm các hàng khác nếu cần -->
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+
+            <div class="checkout-button">
+                <button type="button" class="btn-checkout">Đăng xuất</button>
+            </div>
+        </main>
+
+        <!-- Hero Background Section -->
+        <section class="hero-background">
+            <div class="map-container">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3723.657345694645!2d105.84066037596354!3d21.038127887416085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135aba15ec15d17%3A0x620e85c2cfe14d4c!2zMSBQaMO5IMSQ4buVbmcgVGhpw6puIFbGsMahbmcsIFBow7pjIFjDoSwgQmEgxJDDrG5oLCBIw6AgTuG7mWkgMTAwMDAwLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1686035694332!5m2!1svi!2s"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <h3>Địa chỉ của chúng tôi</h3>
+            </div>
+
+            <div class="hero-overlay">
+                <h2>Trải nghiệm trọn vẹn từng khoảnh khắc, tận hưởng kỳ nghỉ thư giãn</h2>
+                <div class="email-signup">
+                    <input type="email" placeholder="Nhập Email để nhận thông tin">
+                    <button type="submit">Đăng ký</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Trải nghiệm trọn vẹn từng khoảnh khắc, tận hưởng kỳ nghỉ thư giãn</h3>
+                    <p>_Hotel</p>
+                </div>
+
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Về chúng tôi</h4>
+                        <ul>
+                            <li>1 Phù Đổng Thiên Vương</li>
+                            <li>hôtel.dl@gmail.com</li>
+                            <li>AI Business Writer</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Hỗ trợ khách hàng</h4>
+                        <ul>
+                            <li>Chính sách đặt phòng & hủy phòng</li>
+                            <li>Câu hỏi thường gặp (FAQ)</li>
+                            <li>Hỗ trợ 24/7</li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>Resources</h4>
+                        <ul>
+                            <li>Documentation</li>
+                            <li>Papers</li>
+                            <li>Press Conferences</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <div class="footer-links-bottom">
+                    <a href="#">Terms of Service</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Cookies</a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Popup Chi tiết đơn -->
+    <div class="booking-detail-popup" id="booking-detail-popup">
+        <div class="popup-content">
+            <button class="close-popup"><i class="fas fa-times"></i></button>
+            <h2>Chi tiết đơn</h2>
+
+            <div class="popup-details">
+                <div class="detail-row">
+                    <div class="detail-label">ID Phòng</div>
+                    <div class="detail-value" id="popup-room-id">001</div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Loại phòng</div>
+                    <div class="detail-value" id="popup-room-type">Delux ( 520.000đ/đêm )</div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Số khách</div>
+                    <div class="detail-value" id="popup-guests">4</div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">CMND / CCCD</div>
+                    <div class="detail-value" id="popup-id-number">Đã nhận</div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Số điện thoại</div>
+                    <div class="detail-value" id="popup-phone">0123123123</div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Tình trạng</div>
+                    <div class="detail-value" id="popup-status">Đã thanh toán</div>
+                </div>
+
+                <div class="detail-row date-row">
+                    <div class="date-col">
+                        <div class="detail-label">Ngày nhận</div>
+                        <div class="detail-value date-value" id="popup-checkin">12.05.2000</div>
+                    </div>
+                    <div class="date-col">
+                        <div class="detail-label">Ngày trả</div>
+                        <div class="detail-value date-value" id="popup-checkout">14.05.2000</div>
+                    </div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Tiền Phòng</div>
+                    <div class="detail-value" id="popup-room-price">520.000 x 2 = 1.040.000đ</div>
+                </div>
+
+                <div class="detail-row">
+                    <div class="detail-label">Phụ thu</div>
+                    <div class="detail-value" id="popup-extra-fee">100.000đ</div>
+                </div>
+
+                <div class="detail-row total-row">
+                    <div class="detail-label">Tổng tiền</div>
+                    <div class="detail-value" id="popup-total">1.140.000 đ</div>
+                </div>
+
+                <div class="detail-notes">
+                    <div class="detail-label">Ghi chú</div>
+                    <div class="detail-value notes-text" id="popup-notes">Hehe</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="assets/js/settings.js"></script>
+</body>
+
+</html>
