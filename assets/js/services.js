@@ -21,11 +21,14 @@ document.addEventListener('DOMContentLoaded', function () {
         fadeInObserver.observe(element);
     });
 
+    // Get current page URL
+    const currentPage = window.location.href;
+
     // Thêm sự kiện click cho các nút
     const orderButton = document.querySelector('.order-button');
     if (orderButton) {
         orderButton.addEventListener('click', function () {
-            window.location.href = 'booking.html';
+            window.location.href = `login.html?ref=${encodeURIComponent(currentPage)}`;
         });
     }
 
@@ -40,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const bookNowBtn = document.querySelector('.book-now-btn');
     if (bookNowBtn) {
         bookNowBtn.addEventListener('click', function () {
-            window.location.href = 'booking.html';
+            window.location.href = `login.html?ref=${encodeURIComponent(currentPage)}`;
         });
     }
 

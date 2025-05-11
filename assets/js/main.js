@@ -31,11 +31,11 @@ document.addEventListener('DOMContentLoaded', function () {
     if (navbar) navbar.classList.add('animate');
 
     // Xử lý nút "Đặt ngay" mới
-    const orderButton = document.querySelector('.order-button-inner');
+    const orderButton = document.querySelector('.order-button');
     if (orderButton) {
         orderButton.addEventListener('mouseenter', function () {
-            this.style.transform = 'translateY(-2px)';
-            this.style.boxShadow = '0 4px 8px rgba(0, 0, 0, 0.2)';
+            this.style.transform = 'translateY(-3px)';
+            this.style.boxShadow = '0 7px 14px rgba(0, 0, 0, 0.15)';
         });
 
         orderButton.addEventListener('mouseleave', function () {
@@ -44,7 +44,21 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         orderButton.addEventListener('click', function () {
-            window.location.href = 'booking.html';
+            // Get current page URL
+            const currentPage = window.location.href;
+            // Redirect to login page with current page as referrer
+            window.location.href = `login.html?ref=${encodeURIComponent(currentPage)}`;
+        });
+    }
+
+    // Add click event for the "Đặt ngay" button in the promotion section
+    const promotionOrderBtn = document.getElementById('promotion-order-btn');
+    if (promotionOrderBtn) {
+        promotionOrderBtn.addEventListener('click', function () {
+            // Get current page URL
+            const currentPage = window.location.href;
+            // Redirect to login page with current page as referrer
+            window.location.href = `login.html?ref=${encodeURIComponent(currentPage)}`;
         });
     }
 
