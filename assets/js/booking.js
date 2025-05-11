@@ -12,31 +12,25 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
-    // Add icons for the search form and buttons
-    const calendarIcon1 = document.querySelector('.calendar-icon-1');
-    if (calendarIcon1) {
-        calendarIcon1.innerHTML = '<i class="fas fa-calendar-alt"></i>';
+    // Fade-in animation for elements
+    const fadeElements = document.querySelectorAll('.fade-in');
+
+    function checkFade() {
+        fadeElements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+            const elementBottom = element.getBoundingClientRect().bottom;
+
+            if (elementTop < window.innerHeight && elementBottom > 0) {
+                element.classList.add('visible');
+            }
+        });
     }
 
-    const calendarIcon2 = document.querySelector('.calendar-icon-2');
-    if (calendarIcon2) {
-        calendarIcon2.innerHTML = '<i class="fas fa-calendar-alt"></i>';
-    }
+    // Run once on load
+    checkFade();
 
-    const peopleIcon = document.querySelector('.people-icon');
-    if (peopleIcon) {
-        peopleIcon.innerHTML = '<i class="fas fa-user"></i>';
-    }
-
-    const searchIcon = document.querySelector('.search-icon');
-    if (searchIcon) {
-        searchIcon.innerHTML = '<i class="fas fa-search"></i>';
-    }
-
-    const arrowIcon = document.querySelector('.arrow-icon');
-    if (arrowIcon) {
-        arrowIcon.innerHTML = '<i class="fas fa-arrow-right"></i>';
-    }
+    // Run on scroll
+    window.addEventListener('scroll', checkFade);
 
     // Make room images load with a slight delay for a nice effect
     const roomImages = document.querySelectorAll('[class*="-img"]');
@@ -45,7 +39,6 @@ document.addEventListener('DOMContentLoaded', function () {
             img.style.opacity = '0';
             img.style.transition = 'opacity 0.5s ease-in-out';
 
-            // Ensure the image is loaded
             if (img.complete) {
                 img.style.opacity = '1';
             } else {
@@ -53,10 +46,10 @@ document.addEventListener('DOMContentLoaded', function () {
                     img.style.opacity = '1';
                 };
             }
-        }, index * 100); // Staggered delay
+        }, index * 100);
     });
 
-    // Add click event for the "Đặt ngay" button in the top right
+    // Add click event for the "Đặt ngay" button
     const orderButton = document.querySelector('.order-button-inner');
     if (orderButton) {
         orderButton.addEventListener('click', function () {
@@ -79,4 +72,15 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('Cảm ơn bạn đã đăng ký nhận thông tin!');
         });
     }
-}); 
+
+    // Add hover effects to navigation items
+    const navItems = document.querySelectorAll('.home-nav, .services-nav, .profile-nav');
+    navItems.forEach(item => {
+        item.addEventListener('mouseenter', function () {
+            this.style.backgroundColor = 'rgba(255, 255, 255, 0.1)';
+        });
+        item.addEventListener('mouseleave', function () {
+            this.style.backgroundColor = '';
+        });
+    });
+});
