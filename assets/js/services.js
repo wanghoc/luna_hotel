@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     // Thêm hiệu ứng fade-in cho các hình ảnh khi cuộn
-    const fadeElements = document.querySelectorAll('.service-img-large, .service-img-small, .pool-img-large, .pool-img-small, .restaurant-img, .tour-img, .custom-img-main, .custom-img-sub');
+    const fadeElements = document.querySelectorAll('.spa-img-main, .spa-img-sub, .pool-img-main, .pool-img-sub, .custom-img-main, .custom-img-sub, .restaurant-img, .tour-img');
 
     const fadeInOptions = {
         threshold: 0.1,
@@ -89,4 +89,4 @@ window.addEventListener('DOMContentLoaded', function () {
     if (heroSection) {
         heroSection.style.transform = 'translateY(0)';
     }
-}); 
+});
