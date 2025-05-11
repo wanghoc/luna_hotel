@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const orderButton = document.querySelector('.order-button-inner');
     if (orderButton) {
         orderButton.addEventListener('click', function () {
-            alert('Chức năng đặt phòng ngay đang được phát triển!');
+            window.location.href = 'login.html';
         });
     }
 
@@ -61,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const viewButtons = document.querySelectorAll('.view-now-btn');
     viewButtons.forEach(button => {
         button.addEventListener('click', function () {
-            alert('Chức năng xem chi tiết phòng đang được phát triển!');
+            window.location.href = 'room-detail.html';
         });
     });
 

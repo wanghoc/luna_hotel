@@ -1,0 +1,407 @@
+:root {
+    --cold-grey5: rgba(243, 244, 246, 1);
+    --cold-grey50: rgba(123, 126, 134, 1);
+    --foundation-greendark: rgba(79, 100, 83, 1);
+    --foundation-greendark-active: rgba(47, 60, 49, 1);
+    --foundation-greendark-hover: rgba(63, 80, 66, 1);
+    --foundation-greendarker: rgba(37, 47, 39, 1);
+    --foundation-greenlight: rgba(240, 243, 241, 1);
+    --foundation-greenlight-active: rgba(209, 217, 210, 1);
+    --foundation-greenlight-hover: rgba(233, 237, 233, 1);
+    --foundation-greennormal: rgba(105, 133, 110, 1);
+    --foundation-greennormal-active: rgba(84, 106, 88, 1);
+    --foundation-greennormal-hover: rgba(95, 120, 99, 1);
+    --foundationbeigedark: rgba(191, 183, 176, 1);
+    --foundationbeigedark-active: rgba(115, 110, 106, 1);
+    --foundationbeigedark-hover: rgba(153, 146, 141, 1);
+    --foundationbeigedarker: rgba(89, 85, 82, 1);
+    --foundationbeigelight: rgba(255, 254, 253, 1);
+    --foundationbeigelight-active: rgba(255, 252, 249, 1);
+    --foundationbeigelight-hover: rgba(255, 253, 252, 1);
+    --foundationbeigenormal: rgba(255, 244, 235, 1);
+    --foundationbeigenormal-active: rgba(204, 195, 188, 1);
+    --foundationbeigenormal-hover: rgba(230, 220, 212, 1);
+}
+
+body {
+    font-family: 'Afacad', Helvetica, Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: var(--foundationbeigenormal);
+    color: #000000;
+}
+
+.container {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
+/* Logo section */
+.logo {
+    position: relative;
+    width: 339px;
+    height: 43px;
+    margin-top: 40px;
+    margin-left: 76px;
+}
+
+.logo-text {
+    position: absolute;
+    width: 337px;
+    top: 11px;
+    left: 2px;
+    font-family: 'Anaheim', Helvetica;
+    font-weight: 500;
+    font-size: 32px;
+    letter-spacing: 5.76px;
+    background: linear-gradient(133deg, rgba(255,255,255,1) 0%, rgba(117,122,140,0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.logo-text-bold {
+    position: absolute;
+    width: 337px;
+    top: 0;
+    left: 0;
+    font-family: 'Anaheim', Helvetica;
+    font-weight: 800;
+    font-size: 32px;
+    letter-spacing: 5.76px;
+    background: linear-gradient(133deg, rgba(0,0,0,1) 0%, rgba(117,122,140,0) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Navigation Bar Section */
+.navigation {
+    display: flex;
+    justify-content: center;
+    max-width: 650px;
+    margin: 32px auto;
+    background: linear-gradient(93deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.04) 100%);
+    border: 2px solid #797979;
+    border-radius: 32px;
+    backdrop-filter: blur(21px);
+    padding: 8px;
+}
+
+.nav-item {
+    text-decoration: none;
+    color: #000000;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 16px 24px;
+    border-radius: 40px;
+    transition: all 0.3s ease;
+}
+
+.nav-item.active, .nav-item:hover {
+    background-color: #000000;
+    color: #ffffff;
+}
+
+/* Background Blur Section */
+.background-blur {
+    background-image: url(https://c.animaapp.com/b75aRnYL/img/rectangle-53.png);
+    background-size: cover;
+    background-position: center;
+    padding: 96px 0;
+    position: relative;
+}
+
+.background-blur::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(21px);
+}
+
+.content-wrapper {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: linear-gradient(93deg, rgba(255,255,255,0.07) 0%, rgba(255,255,255,0.09) 100%);
+    border: 1px solid #d7d2d2;
+    border-radius: 24px;
+    padding: 40px;
+}
+
+.success-message {
+    flex: 1;
+    text-align: center;
+    color: #ffffff;
+}
+
+.success-icon {
+    width: 65px;
+    height: 57px;
+    background-image: url(https://c.animaapp.com/b75aRnYL/img/ellipse-8.svg), url(https://c.animaapp.com/b75aRnYL/img/line-12.svg), url(https://c.animaapp.com/b75aRnYL/img/line-13.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    margin: 0 auto 24px;
+}
+
+.success-message h2 {
+    color: #80ff8f;
+    font-size: 68px;
+    margin-bottom: 24px;
+}
+
+.success-message p {
+    font-size: 20px;
+    line-height: 1.4;
+    margin-bottom: 32px;
+}
+
+.home-button {
+    background-color: #ffffff;
+    color: #000000;
+    border: none;
+    padding: 17px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+.booking-details {
+    flex: 1;
+    background-color: #fffaf6;
+    border-radius: 32px;
+    padding: 32px;
+}
+
+.booking-details h3 {
+    font-size: 24px;
+    margin-bottom: 24px;
+}
+
+.info-item {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 16px;
+}
+
+.info-item span:first-child {
+    color: #000000;
+}
+
+.info-item span:last-child {
+    color: #727272;
+}
+
+.total {
+    display: flex;
+    justify-content: space-between;
+    font-size: 24px;
+    font-weight: bold;
+    margin-top: 24px;
+}
+
+.details-button {
+    background-color: #000000;
+    color: #fffaf6;
+    border: none;
+    padding: 17px 24px;
+    font-size: 20px;
+    font-weight: bold;
+    border-radius: 100px;
+    cursor: pointer;
+    margin-top: 24px;
+}
+
+/* Hotel Banner Section */
+.hotel-banner {
+    background-image: url(https://c.animaapp.com/b75aRnYL/img/rectangle-72.png);
+    background-size: cover;
+    background-position: center;
+    height: 730px;
+    padding: 176px 80px 0;
+    color: #ffffff;
+}
+
+.banner-content {
+    display: flex;
+    align-items: flex-start;
+    gap: 24px;
+}
+
+.hotel-image {
+    width: 571px;
+    height: 352px;
+    object-fit: cover;
+}
+
+.tagline {
+    font-size: 64px;
+    line-height: 1.5;
+    max-width: 1213px;
+    text-align: right;
+}
+
+.email-subscription {
+    margin-top: 40px;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.email-input {
+    width: 400px;
+    height: 71px;
+    border: none;
+    background-color: var(--cold-grey5);
+    border-radius: 30px 0 0 30px;
+    padding: 0 24px;
+    font-size: 18px;
+}
+
+.subscribe-button {
+    width: 150px;
+    height: 71px;
+    background-color: #000000;
+    color: #ffffff;
+    border: none;
+    border-radius: 0 30px 30px 0;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.address {
+    font-family: 'Segoe UI', Helvetica;
+    font-weight: bold;
+    font-size: 20px;
+    margin-top: 80px;
+}
+
+/* Footer Section */
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 90px;
+    padding: 32px 0;
+}
+
+.footer-column h3 {
+    font-size: 16px;
+    margin-bottom: 16px;
+}
+
+.footer-column p {
+    font-family: 'Segoe UI', Helvetica;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 28.8px;
+    margin-bottom: 18px;
+}
+
+/* Main Content Section */
+.main-content {
+    background-color: #010314;
+    padding: 24px 200px;
+}
+
+.main-content nav {
+    display: flex;
+    gap: 32px;
+}
+
+.main-content a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+@media (max-width: 1200px) {
+    .content-wrapper {
+        flex-direction: column;
+    }
+
+    .banner-content {
+        flex-direction: column;
+    }
+
+    .tagline {
+        text-align: left;
+        font-size: 48px;
+    }
+
+    .hotel-banner {
+        height: auto;
+        padding: 80px 40px;
+    }
+
+    .email-subscription {
+        justify-content: flex-start;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+}
+
+@media (max-width: 768px) {
+    .navigation {
+        flex-wrap: wrap;
+    }
+
+    .nav-item {
+        flex: 1 0 40%;
+        text-align: center;
+    }
+
+    .hotel-image {
+        width: 100%;
+        height: auto;
+    }
+
+    .email-input {
+        width: 60%;
+    }
+
+    .subscribe-button {
+        width: 40%;
+    }
+
+    .main-content {
+        padding: 24px 40px;
+    }
+    .map-section {
+        position: absolute;
+        top: 6505px; /* Điều chỉnh vị trí trùng với map-image trước đó */
+        left: 80px;
+        width: 571px;
+        height: 352px;
+        border-radius: 16px;
+        overflow: hidden;
+        border: 1px solid #fff;
+    }
+    
+    .map-title {
+        position: absolute;
+        top: 367px; /* Đặt tiêu đề ngay dưới bản đồ */
+        left: 183px; /* Căn giữa tiêu đề dưới bản đồ */
+        width: 205px;
+        color: white;
+        font-size: 20px;
+        font-family: 'Segoe UI';
+        font-weight: 700;
+        line-height: 28px;
+        text-align: center;
+        z-index: 2;
+    }
+    
+    .map-iframe {
+        width: 100%;
+        height: 100%;
+        border: 0;
+    }
+}
