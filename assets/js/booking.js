@@ -56,11 +56,15 @@ document.addEventListener('DOMContentLoaded', function () {
         }, index * 100); // Staggered delay
     });
 
+    // Get current page URL
+    const currentPage = window.location.href;
+
     // Add click event for the "Đặt ngay" button in the top right
     const orderButton = document.querySelector('.order-button-inner');
     if (orderButton) {
         orderButton.addEventListener('click', function () {
-            alert('Chức năng đặt phòng ngay đang được phát triển!');
+            // Redirect to login page with current page as referrer
+            window.location.href = `login.html?ref=${encodeURIComponent(currentPage)}`;
         });
     }
 
