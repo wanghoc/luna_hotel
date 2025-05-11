@@ -275,10 +275,6 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 }); 
-
-
-
-
   // Gán phần tử ảnh trong vòng tròn
   const circleImage = document.getElementById('circleImage');
 
