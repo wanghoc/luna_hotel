@@ -275,3 +275,25 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 }); 
+
+
+
+
+  // Gán phần tử ảnh trong vòng tròn
+  const circleImage = document.getElementById('circleImage');
+
+  // Gán sự kiện click cho từng dòng chữ
+  document.querySelector('.text-wrapper').addEventListener('click', () => {
+    circleImage.src = "assets/images/Rectangle 64.png"; // Đổi sang ảnh Delux
+  });
+
+  document.querySelector('.text-wrapper-2').addEventListener('click', () => {
+    circleImage.src = "assets/images/Rectangle 65.png"; // Đổi sang ảnh President
+  });
+
+  document.querySelector('.text-wrapper-3').addEventListener('click', () => {
+    circleImage.src = "assets/images/Rectangle 66.png"; // Đổi sang ảnh Penthouse
+  });
+
+
+
