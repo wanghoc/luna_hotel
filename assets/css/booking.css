@@ -116,9 +116,9 @@ body {
     position: absolute;
     display: flex;
     align-items: center;
-    background: #000000;
+    /* background: #000000; */
     border-radius: 100px;
-    border: 2px #797979 solid;
+    /* border: 2px #797979 solid; */
     padding: 0 20px;
 }
 
