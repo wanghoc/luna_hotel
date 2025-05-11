@@ -422,29 +422,35 @@ body {
     top: 272px;
 }
 
-.service-img-large {
-    width: 877px;
-    height: 805px;
+.spa-gallery {
+    position: absolute;
     left: 903px;
     top: -90px;
-    position: absolute;
-    box-shadow: 4px 4px 62px rgba(0, 0, 0, 0.25);
-    border-top-left-radius: 473px;
-    border-top-right-radius: 24px;
-    border-bottom-right-radius: 24px;
-    border-bottom-left-radius: 24px;
-    object-fit: cover;
+    width: 877px;
+    height: 805px;
 }
 
-.service-img-small {
-    width: 508px;
-    height: 230.71px;
-    left: 993px;
-    top: 570.29px;
-    position: absolute;
-    box-shadow: 7px 4px 73px rgba(0, 0, 0, 0.48);
-    border-radius: 16px;
+.spa-img-main {
+    width: 877px;
+    height: 805px;
     object-fit: cover;
+    border-radius: 30px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 80% 100%, 0 100%);
+    box-shadow: 4px 4px 62px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.spa-img-sub {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 50px;
+    top: 650px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Service 2: Restaurant */
@@ -496,16 +502,16 @@ body {
 
 /* Service 3: Swimming Pool */
 .service-pool {
-    left: 1065px;
+    left: 83px;
     top: 4256px;
 }
 
 .pool-label {
     width: 751px;
     height: 71px;
-    left: 24px;
-    top: 35px;
-    text-align: right;
+    left: 0;
+    top: 81px;
+    text-align: left;
 }
 
 .pool-title {
@@ -513,44 +519,46 @@ body {
     height: 449px;
     left: 0;
     top: 0;
-    text-align: right;
+    text-align: left;
 }
 
 .pool-description {
     width: 808px;
     height: 354px;
-    left: -38px;
-    top: 315px;
-    text-align: right;
+    left: 0;
+    top: 191px;
+    text-align: left;
 }
 
-.pool-img-large {
+.pool-gallery {
+    position: absolute;
+    left: 892px;
+    top: -225px;
     width: 877px;
     height: 805px;
-    left: -105px;
-    top: 709px;
-    position: absolute;
-    transform: rotate(180deg);
-    transform-origin: top left;
-    box-shadow: 4px 4px 62px rgba(0, 0, 0, 0.25);
-    border-top-left-radius: 473px;
-    border-top-right-radius: 24px;
-    border-bottom-right-radius: 24px;
-    border-bottom-left-radius: 24px;
-    object-fit: cover;
 }
 
-.pool-img-small {
-    width: 458px;
-    height: 208px;
-    left: -105px;
-    top: 795px;
-    position: absolute;
-    transform: rotate(180deg);
-    transform-origin: top left;
-    box-shadow: 7px 3px 73px rgba(0, 0, 0, 0.25);
-    border-radius: 16px;
+.pool-img-main {
+    width: 877px;
+    height: 805px;
     object-fit: cover;
+    border-radius: 30px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 80% 100%, 0 100%);
+    box-shadow: 4px 4px 62px rgba(0, 0, 0, 0.25);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.pool-img-sub {
+    width: 300px;
+    height: 200px;
+    position: absolute;
+    left: 50px;
+    top: 650px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 /* Service 4: Tours */
@@ -610,7 +618,7 @@ body {
 .tour-gallery {
     display: grid;
     grid-template-columns: repeat(2, 411px);
-    grid-template-rows: repeat(2, 498px);
+    grid-template-rows: 600px 400px;
     gap: 39px;
     position: absolute;
     left: 892px;
@@ -654,24 +662,30 @@ body {
     text-align: right;
 }
 
-.custom-img-main {
-    width: 553px;
-    height: 742px;
+.custom-gallery {
+    position: absolute;
     left: -985px;
     top: -41px;
-    position: absolute;
-    border-radius: 16px;
+}
+
+.custom-img-main {
+    width: 877px;
+    height: 805px;
     object-fit: cover;
+    border-radius: 30px;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 80% 100%, 0 100%);
+    box-shadow: 4px 4px 62px rgba(0, 0, 0, 0.25);
 }
 
 .custom-img-sub {
-    width: 557px;
-    height: 695px;
-    left: -658px;
-    top: -124px;
+    width: 300px;
+    height: 200px;
     position: absolute;
-    border-radius: 16px;
+    left: 50px;
+    top: 650px;
     object-fit: cover;
+    border-radius: 20px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.2);
 }
 
 .contact-now-btn {
@@ -732,7 +746,7 @@ body {
     line-height: 96px;
 }
 
-.map-image {
+iframe {
     width: 571px;
     height: 352px;
     left: 80px;
@@ -740,7 +754,6 @@ body {
     position: absolute;
     border-radius: 16px;
     border: 1px white solid;
-    object-fit: cover;
 }
 
 .address-title {
