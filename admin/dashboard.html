@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Hotel - Dashboard</title>
+    <link rel="stylesheet" href="../assets/css/globals.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Anaheim&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="admin-container">
+        <!-- Sidebar Navigation -->
+        <nav class="admin-sidebar">
+            <div class="sidebar-icon active">
+                <i class="fas fa-home"></i>
+            </div>
+            <div class="sidebar-icon">
+                <i class="fas fa-bed"></i>
+            </div>
+            <div class="sidebar-icon">
+                <i class="fas fa-calendar-check"></i>
+            </div>
+            <div class="sidebar-icon">
+                <i class="fas fa-users"></i>
+            </div>
+            <div class="sidebar-icon">
+                <i class="fas fa-concierge-bell"></i>
+            </div>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <!-- Top Navigation -->
+            <header class="admin-header">
+                <div class="header-search">
+                    <input type="text" placeholder="Tìm kiếm...">
+                </div>
+                <div class="header-right">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">4</span>
+                    </div>
+                    <div class="admin-profile">
+                        <img src="../assets/images/admin-avatar.png" alt="Admin">
+                        <span>Xin chào, <br>Admin <strong>Gia Bẻo</strong></span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <div class="dashboard-content">
+                <!-- Breadcrumb -->
+                <div class="breadcrumb">
+                    Home / Tổng quan
+                </div>
+
+                <!-- Page Title -->
+                <h1 class="page-title">Tổng quan</h1>
+
+                <!-- Dashboard Cards -->
+                <div class="dashboard-cards">
+                    <div class="card">
+                        <h3>Số khách hàng</h3>
+                        <div class="value">42</div>
+                    </div>
+                    <div class="card">
+                        <h3>Số phòng trống</h3>
+                        <div class="value">42</div>
+                    </div>
+                    <div class="card">
+                        <h3>Số phòng đặt</h3>
+                        <div class="value">42</div>
+                    </div>
+                </div>
+
+                <!-- Check-in Section -->
+                <div class="check-in-section">
+                    <div class="section-header">
+                        <h2>Check in ngày hôm nay</h2>
+                        <button class="btn btn-secondary">Xem ngay</button>
+                    </div>
+                    <div class="check-in-list">
+                        <!-- Add check-in items here -->
+                    </div>
+                </div>
+
+                <!-- Check-out Section -->
+                <div class="check-out-section">
+                    <div class="section-header">
+                        <h2>Phòng check out hôm nay</h2>
+                        <button class="btn btn-secondary">Xem ngay</button>
+                    </div>
+                    <div class="check-out-list">
+                        <!-- Add check-out items here -->
+                    </div>
+                </div>
+
+                <!-- Recent Comments -->
+                <div class="recent-comments">
+                    <div class="section-header">
+                        <h2>Bình luận mới</h2>
+                        <button class="btn btn-secondary">Xem thêm</button>
+                    </div>
+                    <div class="comments-list">
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <h3>Ánh Meme</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                </div>
+                            </div>
+                            <p>"Mọi thứ đều tuyệt vời! Phòng rộng rãi, tiện nghi đầy đủ, bữa sáng ngon miệng."</p>
+                        </div>
+                        <div class="comment-card">
+                            <div class="comment-header">
+                                <h3>Ánh Meme 2</h3>
+                                <div class="rating">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="far fa-star"></i>
+                                </div>
+                            </div>
+                            <p>"Mọi thứ đều tuyệt vời! Phòng rộng rãi, tiện nghi đầy đủ, bữa sáng ngon miệng, nhân viên
+                                tận tình quá trời"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../assets/js/admin.js"></script>
+</body>
+
+</html>

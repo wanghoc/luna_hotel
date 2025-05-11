@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Luna Hotel - Quản lý dịch vụ</title>
+    <link rel="stylesheet" href="../assets/css/globals.css">
+    <link rel="stylesheet" href="../assets/css/admin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Afacad:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Anaheim&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="admin-container">
+        <!-- Sidebar Navigation -->
+        <nav class="admin-sidebar">
+            <div class="sidebar-header">
+                <h2>LUNA HOTEL</h2>
+                <p>Admin Panel</p>
+            </div>
+            <ul class="sidebar-menu">
+                <li>
+                    <a href="dashboard.html">
+                        <i class="fas fa-home"></i>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="rooms.html">
+                        <i class="fas fa-bed"></i>
+                        <span>Quản lý phòng</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="bookings.html">
+                        <i class="fas fa-calendar-check"></i>
+                        <span>Quản lý đặt phòng</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="users.html">
+                        <i class="fas fa-users"></i>
+                        <span>Quản lý người dùng</span>
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="services.html">
+                        <i class="fas fa-concierge-bell"></i>
+                        <span>Quản lý dịch vụ</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="admin-main">
+            <!-- Top Navigation -->
+            <header class="admin-header">
+                <div class="header-search">
+                    <i class="fas fa-search"></i>
+                    <input type="text" placeholder="Tìm kiếm dịch vụ...">
+                </div>
+                <div class="header-right">
+                    <div class="notifications">
+                        <i class="fas fa-bell"></i>
+                        <span class="badge">3</span>
+                    </div>
+                    <div class="admin-profile">
+                        <img src="../assets/images/admin-avatar.png" alt="Admin">
+                        <span>Admin</span>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Service Management Content -->
+            <div class="service-management">
+                <div class="page-header">
+                    <h1>Quản lý dịch vụ</h1>
+                    <button class="btn btn-primary">
+                        <i class="fas fa-plus"></i>
+                        Thêm dịch vụ mới
+                    </button>
+                </div>
+
+                <!-- Service Filters -->
+                <div class="service-filters">
+                    <div class="filter-group">
+                        <label>Loại dịch vụ:</label>
+                        <select class="form-control">
+                            <option value="">Tất cả</option>
+                            <option value="spa">Spa & Massage</option>
+                            <option value="restaurant">Nhà hàng</option>
+                            <option value="pool">Hồ bơi</option>
+                            <option value="gym">Phòng gym</option>
+                            <option value="other">Dịch vụ khác</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Trạng thái:</label>
+                        <select class="form-control">
+                            <option value="">Tất cả</option>
+                            <option value="active">Đang hoạt động</option>
+                            <option value="inactive">Không hoạt động</option>
+                            <option value="maintenance">Bảo trì</option>
+                        </select>
+                    </div>
+                    <div class="filter-group">
+                        <label>Sắp xếp theo:</label>
+                        <select class="form-control">
+                            <option value="name">Tên dịch vụ</option>
+                            <option value="price-asc">Giá tăng dần</option>
+                            <option value="price-desc">Giá giảm dần</option>
+                            <option value="popular">Độ phổ biến</option>
+                        </select>
+                    </div>
+                </div>
+
+                <!-- Service List -->
+                <div class="service-list">
+                    <div class="table-responsive">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Tên dịch vụ</th>
+                                    <th>Loại</th>
+                                    <th>Giá</th>
+                                    <th>Trạng thái</th>
+                                    <th>Đánh giá</th>
+                                    <th>Thao tác</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>#S001</td>
+                                    <td>Massage Thư Giãn</td>
+                                    <td><span class="service-type spa">Spa & Massage</span></td>
+                                    <td>500.000đ</td>
+                                    <td><span class="status active">Đang hoạt động</span></td>
+                                    <td>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star-half-alt"></i>
+                                            <span>(4.5)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="btn btn-view"><i class="fas fa-eye"></i></button>
+                                            <button class="btn btn-edit"><i class="fas fa-edit"></i></button>
+                                            <button class="btn btn-delete"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#S002</td>
+                                    <td>Bữa tối đặc biệt</td>
+                                    <td><span class="service-type restaurant">Nhà hàng</span></td>
+                                    <td>1.200.000đ</td>
+                                    <td><span class="status active">Đang hoạt động</span></td>
+                                    <td>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <span>(5.0)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="btn btn-view"><i class="fas fa-eye"></i></button>
+                                            <button class="btn btn-edit"><i class="fas fa-edit"></i></button>
+                                            <button class="btn btn-delete"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>#S003</td>
+                                    <td>Hồ bơi vô cực</td>
+                                    <td><span class="service-type pool">Hồ bơi</span></td>
+                                    <td>200.000đ</td>
+                                    <td><span class="status maintenance">Bảo trì</span></td>
+                                    <td>
+                                        <div class="rating">
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="fas fa-star"></i>
+                                            <i class="far fa-star"></i>
+                                            <span>(4.0)</span>
+                                        </div>
+                                    </td>
+                                    <td>
+                                        <div class="action-buttons">
+                                            <button class="btn btn-view"><i class="fas fa-eye"></i></button>
+                                            <button class="btn btn-edit"><i class="fas fa-edit"></i></button>
+                                            <button class="btn btn-delete"><i class="fas fa-trash"></i></button>
+                                        </div>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- Pagination -->
+                <div class="pagination">
+                    <button class="btn btn-secondary"><i class="fas fa-chevron-left"></i></button>
+                    <button class="btn btn-primary">1</button>
+                    <button class="btn btn-secondary">2</button>
+                    <button class="btn btn-secondary">3</button>
+                    <button class="btn btn-secondary"><i class="fas fa-chevron-right"></i></button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <script src="../assets/js/admin.js"></script>
+</body>
+
+</html>

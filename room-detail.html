@@ -40,8 +40,8 @@
                     <img src="assets/images/Rectangle 96.png" alt="Phòng View thung lũng">
                 </div>
                 <div class="thumbnails">
-                    <div class="thumbnail"><img src="assets/images/Rectangle 97.png" alt="Phòng góc 1"></div>
-                    <div class="thumbnail"><img src="assets/images/Rectangle 98.png" alt="Phòng góc 2"></div>
+                    <div class="thumbnail"><img src="assets/images/Rectangle 97.png" alt="Phòng góc 1"><span class="price-tag">80</span></div>
+                    <div class="thumbnail"><img src="assets/images/Rectangle 98.png" alt="Phòng góc 2"><span class="price-tag">526</span></div>
                     <div class="thumbnail">
                         <img src="assets/images/Rectangle 99.png" alt="Phòng góc 3">
                         <button class="view-all-photos">Xem tất cả 60+ ảnh</button>
@@ -115,19 +115,13 @@
 
         <section class="calendar-section">
             <h2>Xem ngày bạn mong muốn còn phòng không</h2>
-            <div class="months-container">
-                <div class="month">
-                    <div class="month-header"><button class="prev-month"><i class="fas fa-chevron-left"></i></button>
-                        <h3>Tháng 4</h3>
-                    </div>
-                    <div class="calendar" id="month1"></div>
+            <div class="calendar-container">
+                <button class="calendar-nav prev-month"><i class="fas fa-chevron-left"></i></button>
+                <div class="calendar-wrapper">
+                    <div class="month-calendar" id="month1"></div>
+                    <div class="month-calendar" id="month2"></div>
                 </div>
-                <div class="month">
-                    <div class="month-header">
-                        <h3>Tháng 5</h3><button class="next-month"><i class="fas fa-chevron-right"></i></button>
-                    </div>
-                    <div class="calendar" id="month2"></div>
-                </div>
+                <button class="calendar-nav next-month"><i class="fas fa-chevron-right"></i></button>
             </div>
         </section>
 
@@ -213,64 +207,50 @@
             </div>
         </section>
 
-        <section class="newsletter-section">
-            <div class="newsletter-map">
-                <img src="assets/images/map.png" alt="Map" class="map-image">
-                <div class="address-overlay">
-                    <p>Địa chỉ của chúng tôi</p>
+        <section class="hotel-banner">
+            <div class="banner-bg" style="background-image: url('assets/images/heading.png');"></div>
+            <div class="banner-content">
+                <div class="map-section">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15613.759354362417!2d108.46359234594887!3d11.94401971876986!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3171130067f54167%3A0x1fa1ec0271bc4eaa!2sY%C3%AAn%20House!5e0!3m2!1svi!2s!4v1746988638657!5m2!1svi!2s" width="300" height="225" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    <div class="address">Địa chỉ của chúng tôi</div>
                 </div>
-            </div>
-            <div class="newsletter-content">
-                <h2>Trải nghiệm trọn vẹn từng khoảnh khắc, tận hưởng kỳ nghỉ thư giãn</h2>
-                <form class="newsletter-form" autocomplete="off">
-                    <input type="email" placeholder="Nhập Email để nhận thông tin" class="newsletter-input">
-                    <button class="newsletter-button" type="submit">Đăng ký</button>
-                </form>
+                <div class="tagline">Trải nghiệm trọn vẹn từng khoảnh khắc, tận hưởng kỳ nghỉ thư giãn</div>
+                <div class="email-subscription">
+                    <input type="email" placeholder="Nhập Email để nhận thông tin" class="email-input">
+                    <button class="subscribe-button">Đăng Ký</button>
+                </div>
             </div>
         </section>
+
+        <footer>
+            <div class="footer-column">
+                <h3>Trải nghiệm trọn vẹn từng khoảnh khắc, tận hưởng kỳ nghỉ thư giãn</h3>
+                <p>_Hotel</p>
+            </div>
+            <div class="footer-column">
+                <h3>Về chúng tôi</h3>
+                <p>1 Phù Đổng Thiên Vương</p>
+                <p><a href="mailto:hotel.dl@gmail.com">hotel.dl@gmail.com</a></p>
+                <p>AI Business Writer</p>
+            </div>
+            <div class="footer-column">
+                <h3>Hỗ trợ khách hàng</h3>
+                <p>Chính sách đặt phòng & hủy phòng</p>
+                <p>Câu hỏi thường gặp (FAQ)</p>
+                <p>Hỗ trợ 24/7</p>
+            </div>
+            <div class="footer-column">
+                <h3>Resources</h3>
+                <p>Documentation</p>
+                <p>Papers</p>
+                <p>Press Conferences</p>
+            </div>
+            <div class="footer-bottom">
+                <p>Terms of Service | Privacy Policy | Cookies</p>
+            </div>
+        </footer>
     </main>
 
-    <footer class="footer-section">
-        <div class="footer-top">
-            <div class="footer-about">
-                <h3>Trải nghiệm trọn vẹn từng khoảnh khắc, tận hưởng kỳ nghỉ thư giãn</h3>
-                <p class="footer-hotel">_Hotel</p>
-            </div>
-            <div class="footer-links">
-                <div class="footer-column">
-                    <h4>Về chúng tôi</h4>
-                    <ul>
-                        <li>1 Phù Đổng Thiên Vương</li>
-                        <li>hotel.dl@gmail.com</li>
-                        <li>AI Business Writer</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Hỗ trợ khách hàng</h4>
-                    <ul>
-                        <li>Chính sách đặt phòng & hủy phòng</li>
-                        <li>Câu hỏi thường gặp (FAQ)</li>
-                        <li>Hỗ trợ 24/7</li>
-                    </ul>
-                </div>
-                <div class="footer-column">
-                    <h4>Resources</h4>
-                    <ul>
-                        <li>Documentation</li>
-                        <li>Papers</li>
-                        <li>Press Conferences</li>
-                    </ul>
-                </div>
-            </div>
-        </div>
-        <div class="footer-bottom">
-            <div class="footer-legal">
-                <a href="#">Terms of Service</a>
-                <a href="#">Privacy Policy</a>
-                <a href="#">Cookies</a>
-            </div>
-        </div>
-    </footer>
     <script src="assets/js/room-detail.js"></script>
 </body>
 

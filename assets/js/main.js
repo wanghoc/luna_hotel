@@ -1,4 +1,3 @@
-// Hiệu ứng cuộn fade in
 document.addEventListener('DOMContentLoaded', function () {
     // Thêm icons cho form tìm kiếm
     const calendarIcon1 = document.querySelector('.calendar-icon-1');
@@ -44,9 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
 
         orderButton.addEventListener('click', function () {
-            // Get current page URL
             const currentPage = window.location.href;
-            // Redirect to login page with current page as referrer
             window.location.href = `login.html?ref=${encodeURIComponent(currentPage)}`;
         });
     }
@@ -55,9 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const promotionOrderBtn = document.getElementById('promotion-order-btn');
     if (promotionOrderBtn) {
         promotionOrderBtn.addEventListener('click', function () {
-            // Get current page URL
             const currentPage = window.location.href;
-            // Redirect to login page with current page as referrer
             window.location.href = `login.html?ref=${encodeURIComponent(currentPage)}`;
         });
     }
@@ -130,7 +125,6 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Change the room preview image based on the selected room type
             if (roomPreviewImg) {
-                // You should replace these with actual image paths
                 const imagePaths = [
                     'assets/images/Rectangle 96.png',
                     'assets/images/Rectangle 97.png',
@@ -141,6 +135,96 @@ document.addEventListener('DOMContentLoaded', function () {
                     roomPreviewImg.src = imagePaths[index];
                 }
             }
+        });
+    });
+
+    // NEW: Click effects for room type selection to change circle-img and hero-bg
+    const circleImg = document.querySelector('.circle-img');
+    const heroBgImg = document.querySelector('.hero-bg');
+
+    // Define image paths for each room type
+    const roomImageMap = {
+        'Delux room': {
+            circle: 'assets/images/image3.png',
+            hero: 'assets/images/image5.png'
+        },
+        'Presidential Suite': {
+            circle: 'assets/images/image2.png',
+            hero: 'assets/images/image4.png'
+        },
+        'Penthouse Suite': {
+            circle: 'assets/images/house.png',
+            hero: 'assets/images/Heading.png'
+        }
+    };
+
+    roomTypes.forEach((roomType, index) => {
+        roomType.addEventListener('click', function () {
+            // Get the room type text
+            const roomTypeText = this.textContent;
+
+            // Update images based on room type
+            if (roomImageMap[roomTypeText] && circleImg && heroBgImg) {
+                circleImg.src = roomImageMap[roomTypeText].circle;
+                heroBgImg.src = roomImageMap[roomTypeText].hero;
+
+                // Update visual styles for clicked room type
+                roomTypes.forEach(item => {
+                    item.style.opacity = '0.7';
+                    item.style.fontWeight = '400';
+                });
+                this.style.opacity = '1';
+                this.style.fontWeight = '700';
+
+                // Update dots
+                roomDots.forEach(dot => dot.style.transform = 'scale(1)');
+                if (roomDots[index]) {
+                    roomDots[index].style.transform = 'scale(1.2)';
+                }
+            }
+        });
+    });
+
+    // NEW: Hover effects for room-type-item to change background image
+    const roomItems = document.querySelectorAll('.room-type-item');
+    const roomBackgroundMap = {
+        'Deluxe Room': 'assets/images/dl.png',
+        'Executive Suite': 'assets/images/ex.png',
+        'Presidential Suite': 'assets/images/pr.png',
+        'Royal Suite': 'assets/images/ro.png',
+        'Penthouse Suite': 'assets/images/pen.png'
+    };
+
+    roomItems.forEach(item => {
+        const roomTitle = item.querySelector('h3').textContent;
+
+        item.addEventListener('mouseenter', function () {
+            if (roomBackgroundMap[roomTitle]) {
+                this.style.backgroundImage = `url(${roomBackgroundMap[roomTitle]})`;
+                this.style.backgroundSize = 'cover';
+                this.style.backgroundPosition = 'center';
+                // Updated: Reduce overlay opacity to make background image bolder
+                this.style.backgroundColor = 'rgba(255, 250, 246, 0.3)'; // Lower opacity for bolder image
+                this.style.backgroundBlendMode = 'overlay';
+                // Make text more readable
+                const textElements = this.querySelectorAll('h3, p, .room-specs span');
+                textElements.forEach(el => {
+                    el.style.color = '#fff';
+                    el.style.textShadow = '0 2px 4px rgba(0, 0, 0, 0.5)';
+                });
+            }
+        });
+
+        item.addEventListener('mouseleave', function () {
+            this.style.backgroundImage = '';
+            this.style.backgroundColor = '#FFFAF6';
+            this.style.backgroundBlendMode = 'normal';
+            // Reset text styles
+            const textElements = this.querySelectorAll('h3, p, .room-specs span');
+            textElements.forEach(el => {
+                el.style.color = '';
+                el.style.textShadow = '';
+            });
         });
     });
 
@@ -253,7 +337,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const serviceImages = document.querySelectorAll('.service-images img, .nature-gallery img');
 
     serviceImages.forEach((img, index) => {
-        // Add a slight delay to each image for a cascade effect
         setTimeout(() => {
             img.classList.add('visible');
         }, index * 100);
@@ -274,4 +357,4 @@ document.addEventListener('DOMContentLoaded', function () {
             window.location.href = 'booking.html';
         });
     }
-}); 
+});
